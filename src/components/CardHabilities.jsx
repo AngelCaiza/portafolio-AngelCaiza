@@ -206,7 +206,7 @@ const CardHabilities = ({ darkMode }) => {
                   <ul className="space-y-0.25">
   {category.skills.map((obj, i) => (
     <li key={i}>
-      <span>{obj.skill}</span>
+     <span translate="no">{obj.skill}</span>
       <div className="flex items-center mt-1">
         <div className={`h-2 flex-1 rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-300'}`}>
           <div
