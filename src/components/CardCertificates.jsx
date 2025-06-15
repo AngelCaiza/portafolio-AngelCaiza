@@ -41,7 +41,7 @@ const CardCertificates = ({ darkMode }) => {
             title: "Conference on Computer, Science, Electronics and Industrial Engineering",
             institution: "CSEI",
             date: "2021",
-            image: "/assets/img/CSEO2021.jpg",
+            image: "/assets/img/cseo2021.jpg",
             url: "https://drive.google.com/file/d/1DSe-eC3o-iya4s4gaT88SmRYkUkJzLJr/view?usp=sharing"
         }
     ];
