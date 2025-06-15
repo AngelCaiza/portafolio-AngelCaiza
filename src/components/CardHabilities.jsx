@@ -248,7 +248,7 @@ const CardHabilities = ({ darkMode }) => {
                   style={{ width: 100 }}
                 >
                   <i className={`${tech.icon} text-4xl mb-2 text-green-400`}></i>
-                  <span className="text-sm">{tech.name}</span>
+                  <span className="text-sm" translate="no">{tech.name}</span>
                 </div>
               ))}
             </div>
