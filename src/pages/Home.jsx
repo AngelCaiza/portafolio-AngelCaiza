@@ -33,7 +33,7 @@ const EXPERIENCES = [
     },
    {
   title: "Pasante en Redes e Infraestructura",
-  company: "Complejo Intercultural y Deportivo Mushuc Runa",
+  company: "Complejo Intercultural y Deportivo Mushuc Runa.",
   period: "Febrero-Marzo 2025 - Presente",
   description: "Colaboración en la instalación y configuración de routers y switches, ponchado de cables de red, pruebas de conectividad y soporte básico en infraestructura de redes.",
   herramientas: "cisco, tp-link, networking, cable, herramientasred",
@@ -41,7 +41,7 @@ const EXPERIENCES = [
 },
     {
         title: "Diseñador en la Gestión de Inventarios UTA",
-        company: "Universidad Técnica de Ambato",
+        company: "Universidad Técnica de Ambato.",
         period: "Marzo-Junio 2024 ",
         description: `Encargado del diseño de esquemas de bases de datos
             y prototipos de interfaz para la plataforma de control de bienes en
