@@ -123,7 +123,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                         </button>
                         <h2 className="text-xl font-bold mb-4 text-center">CV Angel Caiza</h2>
                         <iframe
-                            src="/assets/img/cvangel.pdf"
+                            src="/assets/img/cvAngelCaiza.pdf"
                             title="CV Preview"
                             className="w-full h-96 border rounded"
                         ></iframe>
