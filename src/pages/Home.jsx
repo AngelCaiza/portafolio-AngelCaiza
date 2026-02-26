@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import CardAboutMe from '../components/CardAboutMe';
 import CardProject from '../components/CardProjects';
 import CardHabilities from '../components/CardHabilities';
@@ -52,32 +52,6 @@ const EXPERIENCES = [
 ];
 
 const Home = ({ darkMode }) => {
-    const [scrollProgress, setScrollProgress] = useState(0);
-    const [activeSection, setActiveSection] = useState('inicio');
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const totalScroll = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const currentScroll = window.scrollY;
-            const progress = (currentScroll / totalScroll) * 100;
-            setScrollProgress(progress);
-
-            const sections = ['inicio', 'proyectos', 'habilidades', 'experiencia', 'certificados', 'contacto'];
-            for (const section of sections) {
-                const element = document.getElementById(section);
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top <= 100 && rect.bottom >= 100) {
-                        setActiveSection(section);
-                        break;
-                    }
-                }
-            }
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     return (
         <main className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} min-h-screen transition-colors duration-300`}>
             {/* Sección Hero */}

@@ -52,19 +52,29 @@ const Footer = ({ darkMode }) => {
                         <h4 className="text-lg font-semibold mb-4">Servicios</h4>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">Desarrollo Web</a>
+                                <button type="button" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">
+                                    Desarrollo Web
+                                </button>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">Desarrollo Móvil</a>
+                                <button type="button" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">
+                                    Desarrollo Móvil
+                                </button>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">Diseño UI/UX</a>
+                                <button type="button" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">
+                                    Diseño UI/UX
+                                </button>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">Consultoría Técnica</a>
+                                <button type="button" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">
+                                    Consultoría Técnica
+                                </button>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">Mantenimiento Web</a>
+                                <button type="button" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">
+                                    Mantenimiento Web
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -74,9 +84,15 @@ const Footer = ({ darkMode }) => {
                         &copy; {new Date().getFullYear()} Angel Caiza. Todos los derechos reservados.
                     </p>
                     <div className="flex space-x-4 text-sm text-gray-300">
-                        <a href="#" className="hover:text-green-400 transition-colors cursor-pointer">Política de Privacidad</a>
-                        <a href="#" className="hover:text-green-400 transition-colors cursor-pointer">Términos de Servicio</a>
-                        <a href="#" className="hover:text-green-400 transition-colors cursor-pointer">Cookies</a>
+                        <button type="button" className="hover:text-green-400 transition-colors cursor-pointer">
+                            Política de Privacidad
+                        </button>
+                        <button type="button" className="hover:text-green-400 transition-colors cursor-pointer">
+                            Términos de Servicio
+                        </button>
+                        <button type="button" className="hover:text-green-400 transition-colors cursor-pointer">
+                            Cookies
+                        </button>
                     </div>
                 </div>
             </div>

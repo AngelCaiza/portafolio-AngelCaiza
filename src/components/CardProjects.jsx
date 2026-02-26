@@ -18,20 +18,20 @@ const Modal = ({ open, onClose, children }) =>
 
 // Íconos de herramientas
 const toolIcons = {
- 'php': 'fab fa-php',
-  'css': 'fab fa-css3-alt',
-  'html': 'fab fa-html5',
-  'typescript': 'fab fa-js',
-  'js': 'fab fa-js',
-  'javascript': 'fab fa-js',
-  'nodejs': 'fab fa-node-js',
-  'angular': 'fab fa-angular',
-  'react': 'fab fa-react',
-  'firebase': 'fas fa-fire',
-  'mysql': 'fas fa-database',
-  'python': 'fab fa-python',
-  'java': 'fab fa-java',         // <--- ICONO DE JAVA (FontAwesome 5+)
-  'netbeans': 'devicon-netbeans-plain', // <--- ICONO DE NETBEANS (DEVICON)
+  php: 'fab fa-php',
+  css: 'fab fa-css3-alt',
+  html: 'fab fa-html5',
+  typescript: 'fab fa-js',
+  js: 'fab fa-js',
+  javascript: 'fab fa-js',
+  nodejs: 'fab fa-node-js',
+  angular: 'fab fa-angular',
+  react: 'fab fa-react',
+  firebase: 'fas fa-fire',
+  mysql: 'fas fa-database',
+  python: 'fab fa-python',
+  java: 'fab fa-java', // ICONO DE JAVA (FontAwesome 5+)
+  netbeans: 'devicon-netbeans-plain', // ICONO DE NETBEANS (DEVICON)
 };
 
 // Proyectos: completa los datos reales de cada uno
@@ -40,11 +40,11 @@ const projects = [
     id: 1,
     name: 'Blog',
     cover: '/assets/img/blog.jpg',
-    description: 'Proyecto de blog personal desarrollado para compartir artículos, noticias y reflexiones.\
-     Permite crear, editar y eliminar publicaciones, categorías y comentarios.',
-    contrib: 'Se participó activamente en todas las fases del proyecto, incluyendo el \
-    diseño de la interfaz de usuario, \
-    la modelación de bases de datos y el desarrollo de las funcionalidades principales.',
+    description: `Proyecto de blog personal desarrollado para compartir artículos, noticias y reflexiones.
+    Permite crear, editar y eliminar publicaciones, categorías y comentarios.`,
+    contrib: `Se participó activamente en todas las fases del proyecto, incluyendo el
+    diseño de la interfaz de usuario,
+    la modelación de bases de datos y el desarrollo de las funcionalidades principales.`,
     tools: ['php', 'css', 'html'],
     code: 'https://github.com/AngelCaiza/Blog.git',
     screenshots: [
@@ -63,9 +63,10 @@ const projects = [
     id: 2,
     name: 'Chat-Organizacional',
     cover: '/assets/img/chat.jpg',
-    description: 'Sistema de chat organizacional para comunicación interna con roles y canales. Permite mensajes en tiempo real usando sockets.',
-    contrib: 'Se contribuyó en todas las fases del proyecto, incluyendo la definición de requerimientos, desarrollo de la interfaz de usuario, estructura de la base de datos \
-    y lógica de comunicación en tiempo real, garantizando la integración de todos los módulos.',
+    description:
+      'Sistema de chat organizacional para comunicación interna con roles y canales. Permite mensajes en tiempo real usando sockets.',
+    contrib: `Se contribuyó en todas las fases del proyecto, incluyendo la definición de requerimientos, desarrollo de la interfaz de usuario, estructura de la base de datos
+    y lógica de comunicación en tiempo real, garantizando la integración de todos los módulos.`,
     tools: ['php', 'css', 'html', 'javascript'],
     code: 'https://github.com/AngelCaiza/Chat-Organizacional.git',
     screenshots: [
@@ -83,9 +84,10 @@ const projects = [
     id: 3,
     name: 'Gestion-de-Inventarios',
     cover: '/assets/img/gestionInvn.jpg',
-    description: 'Sistema de gestión de inventarios para la Universidad Técnica de Ambato. Administra bienes y mobiliario, con control eficiente y reportes.',
-    contrib: 'Encargado del diseño de la interfaz de usuario, aplicando criterios de usabilidad y coherencia \
-    visual para optimizar la experiencia de los usuarios en la gestión de inventarios.',
+    description:
+      'Sistema de gestión de inventarios para la Universidad Técnica de Ambato. Administra bienes y mobiliario, con control eficiente y reportes.',
+    contrib: `Encargado del diseño de la interfaz de usuario, aplicando criterios de usabilidad y coherencia
+    visual para optimizar la experiencia de los usuarios en la gestión de inventarios.`,
     tools: ['typescript', 'html', 'angular', 'css', 'nodejs', 'js'],
     code: 'https://github.com/AngelCaiza/Gestion-de-Inventarios.git',
     screenshots: [
@@ -103,9 +105,10 @@ const projects = [
     id: 4,
     name: 'Simulador-Banco',
     cover: '/assets/img/banco.jpg',
-    description: 'Simulador de operaciones bancarias para educación financiera. Permite crear cuentas, realizar transferencias y manejar historial de operaciones.',
-    contrib: 'Responsable del diseño de la interfaz de usuario y la creación de la base de \
-    datos, priorizando tanto la usabilidad como la eficiencia del sistema.',
+    description:
+      'Simulador de operaciones bancarias para educación financiera. Permite crear cuentas, realizar transferencias y manejar historial de operaciones.',
+    contrib: `Responsable del diseño de la interfaz de usuario y la creación de la base de
+    datos, priorizando tanto la usabilidad como la eficiencia del sistema.`,
     tools: ['angular', 'html', 'css'],
     code: 'https://github.com/AngelCaiza/Simulador-Banco.git',
     screenshots: [
@@ -123,9 +126,10 @@ const projects = [
     id: 5,
     name: 'Gestion-de-Ventas',
     cover: '/assets/img/ventas.jpg',
-    description: 'Sistema web para gestión de ventas, control de stock, facturación y reportes en tiempo real.',
-    contrib: 'Participación integral en el desarrollo del sistema, \
-    abarcando diseño de interfaz, base de datos y funcionalidades principales.',
+    description:
+      'Sistema web para gestión de ventas, control de stock, facturación y reportes en tiempo real.',
+    contrib: `Participación integral en el desarrollo del sistema,
+    abarcando diseño de interfaz, base de datos y funcionalidades principales.`,
     tools: ['java', 'mysql', 'css', 'html'],
     code: 'https://github.com/AngelCaiza/Gestion-de-Ventas.git',
     screenshots: [
@@ -140,14 +144,10 @@ const projects = [
     ]
   }
 ];
-function capitalize(str) {
-  if (!str) return "";
-  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-}
 
 const CardProject = ({ darkMode }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalProject, setModalProject] = useState(null);
+  const [modalProject] = useState(null);
 
   return (
     <section id="proyectos" className={`py-20 ${darkMode ? 'bg-gray-800' : 'bg-gray-100'}`}>
