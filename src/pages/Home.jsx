@@ -95,7 +95,7 @@ const Home = ({ darkMode }) => {
                         <div className="md:w-1/2 flex justify-center mb-7">
                             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-green-400 transform hover:scale-105 transition-transform duration-300">
                                 <img
-                                    src="/assets/img/angel.jpg"
+                                    src="/assets/img/ac.jpeg"
                                     alt="Desarrollador"
                                     className="w-full h-full object-cover object-top"
                                 />
